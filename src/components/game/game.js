@@ -1,5 +1,6 @@
 import React from "react";
 import Board from "./board";
+import hello from "./hello";
 
 class Game extends React.Component {
    constructor(props) {
@@ -61,6 +62,7 @@ class Game extends React.Component {
 
        return (
        <div className="game">
+         <div>{hello}</div>
            <div className="game-board">
                <Board 
                squares={current.squares}
@@ -70,6 +72,7 @@ class Game extends React.Component {
            <div className="game-info">
                <div>{status}</div>
                <ol>{moves}</ol>
+               <ol>X i Y </ol>
            </div>
        </div>
        );
